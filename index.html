@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Jenefer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * img{
+            height: 350px;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #ff9a9e 0%, #fad0c4 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            perspective: 1000px;
+            max-width: 80%;
+        }
+
+        .birthday-banner {
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .birthday-banner h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4em;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .mySlides {
+            display: none;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+
+        .mySlides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .dots-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.5); }
+            to { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <audio id="birthdaySong" loop>
+        <source src="01-Monk-Turner-Fascinoma-Its-Your-Birthday(chosic.com).mp3" >
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="container">
+        <div class="birthday-banner">
+            <h1 style="text-align: center;">Happy Birthday Jenifer 😁🙌</h1>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="photo1.jpg" alt="Photo 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="photo16.jpg" alt="Photo 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="photo14.jpg" alt="Photo 3">
+            </div>
+            
+            
+            
+            <div class="mySlides fade">
+                <img style="height: 350px;" src="photo9.jpg" alt="Photo 5">
+            </div>
+            <div class="mySlides fade">
+                <img style="height: 350px;"src="photo10.jpg" alt="Photo 6">
+            </div>
+            <div class="mySlides fade">
+                <img style="height: 350px;"src="photo7.jpg" alt="Photo 7">
+            </div>
+            <div class="mySlides fade">
+                <img src="photo4.jpg" alt="Photo 8">
+            </div>
+            <div class="mySlides fade">
+                <img src="photo5.jpg" alt="Photo 9">
+            </div>
+            <div class="mySlides fade">
+                <img src="photo6.jpg" alt="Photo 10">
+            </div>
+            <div class="mySlides fade">
+                <img src="photo11.jpg" alt="Photo 11">
+            </div>
+            <div class="mySlides fade">
+                <img src="photo12.jpg" alt="Photo 12">
+            </div>
+            <div class="mySlides fade">
+                <img src="photo2.jpg" alt="Photo 13">
+            </div>
+            <div class="mySlides fade">
+                <img src="photo3.jpg" alt="Photo 14">
+            </div>
+            <div class="mySlides fade">
+                <img style="height: 350px;" src="photo16.jpg" alt="Photo 3">
+            </div>
+            <div class="mySlides fade">
+                <img src="photo8.jpg" alt="Photo 4">
+            </div>
+            <div class="mySlides fade">
+                <img src="photo17.png" alt="Photo 3">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>.
+    </div>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span> 
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+            <span class="dot" onclick="currentSlide(13)"></span>
+            <span class="dot" onclick="currentSlide(14)"></span>
+            <span class="dot" onclick="currentSlide(15)"></span>
+            <span class="dot" onclick="currentSlide(16)"></span>
+            <span class="dot" onclick="currentSlide(17)"></span>
+            <span class="dot" onclick="currentSlide(18)"></span>
+            <!-- Add more dots as needed -->
+        </div>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+        window.onload = function() {
+        let audio = document.getElementById("birthdaySong");
+        audio.play(Infinity);
+        };
+    </script>
+</body>
+</html>
